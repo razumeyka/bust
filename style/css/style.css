@@ -916,6 +916,63 @@ html, body {
             text-align: center;
     }
 
+/* bust-third-screen */
+    .bust-third-screen {
+            padding-top: 50px;
+    }
+    .bust-third-screen .characteristics {
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+    .bust-third-screen h1 {
+            font-size: 30px;
+            font-family: "Acrom-Bold";
+            color: rgb(46, 39, 35);
+            text-transform: uppercase;
+            line-height: 1.6;
+            text-align: center;
+            letter-spacing: 2.3px;
+            margin: 60px 0 20px;
+     }
+
+    .bust-third-screen .bust_category1 {
+            background-image: url(../img/bust_category.png);
+            background-size: 3600px;
+            background-position: -1px -120px;
+            width: 900px;
+            height: 650px;
+            margin-left: -460px;
+    }
+
+    .bust-third-screen ul {
+            display: block;
+            flex: 1;
+    }
+
+    .bust-third-screen ul li {
+            text-align: left;
+            font-size: 20px;
+            font-family: "Acrom-Medium";
+            color: rgb(69, 58, 52);
+            line-height: 1.65;
+            list-style: none;
+            position: relative;
+            padding: 15px 38px;
+            letter-spacing: 1.2px;
+    }
+
+    .bust-third-screen ul li::before {
+            content: "•";
+            font-size: 50px;
+            font-weight:600;
+            color: #ffd57a;
+            position: absolute;
+            left: 0;
+            top: -10px;
+    }
+
+
 /* Media */
 	@media(max-width: 1300px) {
 		.first-screen-img {
