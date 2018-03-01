@@ -52,6 +52,20 @@ html, body {
 	  font-style: normal;
 	}
 
+    @font-face {
+      font-family: 'Raleway-Bold';
+      src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Raleway-Bold.woff') format('woff'), url('../fonts/Raleway-Bold.ttf')  format('truetype'), url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+     }
+
+    @font-face {
+      font-family: 'Raleway-Medium';
+      src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/Raleway-Medium.woff') format('woff'), url('../fonts/Raleway-Medium.ttf')  format('truetype'), url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+      font-weight: normal;
+      font-style: normal;
+     }
+
 /* Header */
 	header {
 		position: absolute;
@@ -857,19 +871,16 @@ html, body {
     }
 
 /* bust-second-screen */
-    .bust-second-screen, .bust-fourth-screen {
+    .thesame {
             background: url(../img/meandr_bg.png) rgb(247, 247, 247);
-            background-size: cover;
             background-position: center center;
-            background-repeat: no-repeat;
-            padding: 27px 0;
             box-sizing: border-box;
             border: solid 5px rgb(255, 255, 255);
             box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     }
 
-    .bust-second-screen .wrapper {
-           padding: 0 0 0 180px; 
+    .bust-second-screen {
+            padding: 27px 0;
     }
 
     .bust-second-screen h3 {
@@ -892,7 +903,7 @@ html, body {
             display: block;
             box-sizing: border-box;
             width: 25%;
-            padding: 20px 10px;
+            padding: 0 10px 28px;
     }
 
     .wpcf7-form-control-wrap input {
@@ -931,7 +942,7 @@ html, body {
             line-height: 1.6;
             text-align: center;
             letter-spacing: 2.3px;
-            margin: 68px 0 0 216px;
+            margin-top: 68px;
      }
 
     .bust-third-screen .characteristics {
@@ -978,16 +989,22 @@ html, body {
     }
 
 /* bust-fourth-screen */
+    .bust-fourth-screen {
+            padding: 75px 0 40px;
+    }
+
     .bust-fourth-screen .about_bust {
-            font-size: 22px;
+            font-size: 18px;
             font-family: "Raleway-Medium";
             line-height: 1.364;
             text-align: justify;
             padding: 20px 0;
+            letter-spacing: 1.3px;
     }
 
     .bust-fourth-screen .about_bust span {
             font-family: "Raleway-Bold";
+            font-size: 22px;
     }
 
     .bust-fourth-screen .quote {
@@ -999,16 +1016,16 @@ html, body {
             line-height: 1.667;
             text-align: justify;
             position: relative;
-            padding: 20px 20px 20px 120px;
+            padding: 20px 35px 20px 140px;
+            margin: 23px 0;
+            letter-spacing: 1.3px;
     }
 
     .bust-fourth-screen .quote span {
             font-family: "Raleway-Bold"; 
     }
 
-    .bust-fourth-screen .quote::before {
-            content: "";
-            background: url(../img/sprites.svg) -988px -165px;
+    .bust-fourth-screen .quote .green {
             background-color: #c8d6a8;
             width: 100px;
             height: 100%;
@@ -1017,6 +1034,227 @@ html, body {
             top: 0;
             bottom: 0;
     } 
+
+    .bust-fourth-screen .quote .green .icon {
+            background: url(../img/sprites.svg) -988px -165px;
+            width: 100px;
+            height: 100px;
+    }
+
+/* bust-fifth-screen */
+    .bust-fifth-screen {
+            padding: 61px 0;
+    }
+
+    .bust-fifth-screen h2 {
+            font-size: 30px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            line-height: 1.6;
+            text-align: left;
+            letter-spacing: 2px;
+            padding: 10px 0 3px;
+            margin: 0;
+    }
+
+    .after_h2 {
+            font-size: 18px;
+            font-family: "Raleway-Medium";
+            line-height: 1.667;
+            text-align: left;
+            padding: 5px 0 20px;
+            letter-spacing: 1.6px;
+    }
+
+    .bust-fifth-screen .bust_types {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+    }
+
+    .bust-fifth-screen .bust_types .bust_wrapper {
+            box-sizing: border-box;
+            width: 33.333%; 
+            padding: 0 20px;
+    }
+
+    .bust-fifth-screen .bust_types .bust {
+            background: url(../img/types_bg.jpg);
+    } 
+
+    .description {
+            background-color: #453a34;
+            padding: 20px;
+            font-size: 15px;
+            font-family: "Acrom-Bold";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            line-height: 2;
+            text-align: center;
+    }
+
+/* bust-sixth-screen */
+    .bust-sixth-screen .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+    .bust-sixth-screen .postament {
+            flex: 1;
+    }
+
+    .bust-sixth-screen .postament h2 {
+              font-size: 30px;
+              font-family: "Acrom-Bold";
+              font-weight: bold;
+              text-transform: uppercase;
+              line-height: 1.6;
+              text-align: left;
+              margin: 65px 0 19px;
+    }
+
+    .bust-sixth-screen .postament .about_postament {
+              font-size: 18px;
+              font-family: "Raleway-Medium";
+              line-height: 1.667;
+              text-align: justify;
+    }
+
+    .bust-sixth-screen .postament .colors {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 32px -20px;
+    }
+
+    .bust-sixth-screen .postament .colors .color_wrapper {
+            box-sizing: border-box;
+            width: 25%;
+    }
+
+    .bust-sixth-screen .postament .colors .color {
+            padding: 0 20px;
+    }
+
+   .bust-sixth-screen .postament .colors .granit {
+            background-image: url(../img/granit.jpg);
+            background-size: 175px;
+            width: 173px;
+            height: 173px;
+    }
+
+   .bust-sixth-screen .postament .colors .red .granit {
+            background-position: -1px -1px;
+    }
+
+   .bust-sixth-screen .postament .colors .brown .granit {
+            background-position: -1px -175px;
+    }
+
+   .bust-sixth-screen .postament .colors .black .granit {
+            background-position: -1px -349px;
+    }
+
+   .bust-sixth-screen .postament .colors .grey .granit {
+            background-position: -1px -525px;
+    }
+
+   .bust-sixth-screen .postament .colors .text {
+            background: #dae8ba;
+            font-size: 15px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            line-height: 1.333;
+            text-align: center;
+            height: 50px;
+            width: 173px;
+            padding: 10px 0;
+    }
+
+    .bust-sixth-screen .bust_category2 {
+            background-image: url(../img/bust_category.png);
+            background-size: 3600px;
+            background-position: -920px -115px;
+            width: 550px;
+            height: 600px;
+            margin-right: -150px;
+    }
+
+/* bust-seventh-screen */
+    .bust-seventh-screen h1 {
+            font-size: 30px;
+            font-family: "Acrom-Bold";
+            color: rgb(46, 39, 35);
+            text-transform: uppercase;
+            line-height: 1.6;
+            text-align: left;
+            letter-spacing: 2.3px;
+            margin-top: 68px;
+     }
+
+    .bust-seventh-screen .proect_characteristics {
+            display: flex;
+            flex-wrap: wrap;
+    }
+
+    .bust-seventh-screen .bust_category3 {
+            background-image: url(../img/bust_category.png);
+            background-size: 3600px;
+            background-position: -1480px -100px;
+            width: 720px;
+            height: 645px;
+            margin-left: -150px;
+    }
+
+    .bust-seventh-screen ul {
+            display: block;
+            flex: 1;
+            padding: 0;
+            margin: 65px;
+    }
+
+    .bust-seventh-screen ul li {
+            text-align: left;
+            font-size: 20px;
+            font-family: "Acrom-Medium";
+            color: rgb(69, 58, 52);
+            line-height: 1.65;
+            list-style: none;
+            position: relative;
+            padding: 15px 0 15px 38px;
+            letter-spacing: 1.2px;
+    }
+
+    .bust-seventh-screen ul li::before {
+            content: "•";
+            font-size: 50px;
+            font-weight:600;
+            color: #ffd57a;
+            position: absolute;
+            left: 0;
+            top: -10px;
+    }
+
+/* bust-seventh-screen */
+    .bust-eight-screen h3 {
+            font-size: 30px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            line-height: 1.6;
+            text-align: left;
+    }
+
+    .bust-eight-screen p {
+            font-size: 18px;
+            font-family: "Raleway-Medium";
+            line-height: 1.667;
+            text-align: justify;
+    }
+
+    .bust-eight-screen p span {
+            font-size: 22px;
+            font-family: "Raleway-Bold";
+    }
+
 
 /* Media */
 	@media(max-width: 1300px) {
