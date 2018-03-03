@@ -942,7 +942,7 @@ html, body {
             line-height: 1.6;
             text-align: center;
             letter-spacing: 2.3px;
-            margin-top: 68px;
+            margin: 68px 0 0;
      }
 
     .bust-third-screen .characteristics {
@@ -956,7 +956,7 @@ html, body {
             background-position: -1px -100px;
             width: 900px;
             height: 645px;
-            margin-left: -228px;
+            margin-left: -315px;
     }
 
     .bust-third-screen ul {
@@ -990,7 +990,7 @@ html, body {
 
 /* bust-fourth-screen */
     .bust-fourth-screen {
-            padding: 75px 0 40px;
+            padding: 48px 0 40px;
     }
 
     .bust-fourth-screen .about_bust {
@@ -1021,6 +1021,10 @@ html, body {
             letter-spacing: 1.3px;
     }
 
+    .bust-fourth-screen .quote .quote_text {
+            padding: 3px 0 20px;
+    }    
+
     .bust-fourth-screen .quote span, .bust-eight-screen .quote span {
             font-family: "Raleway-Bold"; 
     }
@@ -1043,7 +1047,7 @@ html, body {
 
 /* bust-fifth-screen */
     .bust-fifth-screen {
-            padding: 61px 0;
+            padding: 61px 0 80px;
     }
 
     .bust-fifth-screen h2 {
@@ -1082,6 +1086,12 @@ html, body {
             background: url(../img/types_bg.jpg);
     } 
 
+    .bust-fifth-screen .bust_types .bust img {
+            height: 457px;
+            width: 373px;
+            margin-bottom: -4px;
+    }
+
     .bust-fifth-screen .bust_types .bust .description {
             background-color: #453a34;
             padding: 20px;
@@ -1091,6 +1101,7 @@ html, body {
             text-transform: uppercase;
             line-height: 2;
             text-align: center;
+            letter-spacing: 1.1px;
     }
 
 /* bust-sixth-screen */
@@ -1104,20 +1115,23 @@ html, body {
     }
 
     .bust-sixth-screen .postament h2 {
-              font-size: 30px;
-              font-family: "Acrom-Bold";
-              font-weight: bold;
-              text-transform: uppercase;
-              line-height: 1.6;
-              text-align: left;
-              margin: 65px 0 19px;
+            font-size: 30px;
+            font-family: "Acrom-Bold";
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.6;
+            text-align: left;
+            margin: 65px 0 19px;
+            letter-spacing: 2.3px;
     }
 
     .bust-sixth-screen .postament .about_postament {
-              font-size: 18px;
-              font-family: "Raleway-Medium";
-              line-height: 1.667;
-              text-align: justify;
+            font-size: 18px;
+            font-family: "Raleway-Medium";
+            line-height: 1.667;
+            text-align: justify;
+            letter-spacing: 1.1px;
+            margin-right: -20px;
     }
 
     .bust-sixth-screen .postament .colors {
@@ -1166,20 +1180,25 @@ html, body {
             line-height: 1.333;
             text-align: center;
             height: 50px;
-            width: 173px;
-            padding: 10px 0;
+            width: 113px;
+            padding: 15px 30px 5px;
+            letter-spacing: 1px;
     }
 
     .bust-sixth-screen .bust_category2 {
             background-image: url(../img/bust_category.png);
             background-size: 3600px;
-            background-position: -920px -115px;
-            width: 550px;
-            height: 600px;
+            background-position: -875px -110px;
+            width: 582px;
+            height: 630px;
             margin-right: -150px;
     }
 
 /* bust-seventh-screen */
+    .bust-seventh-screen {
+            padding: 70px 0 5px;
+    }
+
     .bust-seventh-screen h1 {
             font-size: 30px;
             font-family: "Acrom-Bold";
@@ -1188,7 +1207,7 @@ html, body {
             line-height: 1.6;
             text-align: left;
             letter-spacing: 2.3px;
-            margin-top: 68px;
+            margin: 0;
      }
 
     .bust-seventh-screen .proect_characteristics {
@@ -1202,14 +1221,14 @@ html, body {
             background-position: -1480px -100px;
             width: 720px;
             height: 645px;
-            margin-left: -150px;
+            margin-left: -162px;
     }
 
     .bust-seventh-screen ul {
             display: block;
             flex: 1;
             padding: 0;
-            margin: 65px;
+            margin: 22px 0 0 35px;
     }
 
     .bust-seventh-screen ul li {
@@ -1235,12 +1254,23 @@ html, body {
     }
 
 /* bust-eight-screen */
+    .bust-eight-screen {
+            padding-top: 47px;
+    }
+
     .bust-eight-screen h3 {
             font-size: 30px;
             font-family: "Acrom-Bold";
             text-transform: uppercase;
             line-height: 1.6;
             text-align: left;
+            letter-spacing: 2.3px;
+            margin: 17px 0;
+    }
+
+    .bust-eight-screen .after_h3 {
+            margin: 9px 0;
+            letter-spacing: 1.4px;
     }
 
     .bust-eight-screen p {
@@ -1248,17 +1278,25 @@ html, body {
             font-family: "Raleway-Medium";
             line-height: 1.667;
             text-align: justify;
+            margin: 10px 0;
+            letter-spacing: 1.2px;
     }
 
     .bust-eight-screen p span {
             font-size: 22px;
             font-family: "Raleway-Bold";
+            letter-spacing: 1.8px;
+    }
+
+    .bust-eight-screen .by_hands span {
+            letter-spacing: 1.3px;
     }
 
     .bust-eight-screen .scheme {
             display: flex;
             flex-wrap: wrap;
-            margin: 0 auto;
+            margin: 40px 0;
+            justify-content: center;
     }
 
     .bust-eight-screen .bust_category4 {
@@ -1270,10 +1308,10 @@ html, body {
     }
 
     .bust-eight-screen .icon {
-            background: url(../img/sprites.svg) -988px -265px;
+            background: url(../img/sprites.svg) -985px -265px;
             width: 150px;
-            height: 100px;
-            margin: auto;
+            height: 110px;
+            margin: auto -30px auto 10px;
     }
 
     .bust-eight-screen .bust_category5 {
@@ -1284,26 +1322,40 @@ html, body {
             height: 360px;
     }
 
+     .bust-eight-screen .quote .green .icon {
+            background: url(../img/sprites.svg) -998px -155px;
+    }
+
+    .bust-eight-screen .quote {
+            margin: 23px 0 30px;
+    }
+
+    .bust-eight-screen .quote .quote_text {
+            padding: 12px 0 10px;
+    }
+
     .bust-eight-screen .type_creating {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 20px;
     }
 
     .bust-eight-screen .type_creating .text {
             flex: 1;
+            padding-right: 42px;
     }
 
     .bust-eight-screen .bust_category6 {
             background-image: url(../img/bust_category.png);
             background-size: 3600px;
-            background-position: -2795px -215px;
-            width: 810px;
-            height: 545px;
-            margin-right: -150px;
+            background-position: -2774px -220px;
+            width: 800px;
+            height: 519px;
+            margin-right: -210px;
     }
 /* bust-nine-screen */
     .bust-nine-screen {
-            padding: 50px 0;
+            padding: 50px 0 70px;
     }
     .bust-nine-screen h3 {
            font-size: 30px;
@@ -1311,6 +1363,7 @@ html, body {
            text-transform: uppercase;
            line-height: 1;
            text-align: left;
+           letter-spacing: 1.5px;
     }
 
     .bust-nine-screen .stage_img, .bust-nine-screen .line {
@@ -1321,34 +1374,34 @@ html, body {
 
     .bust-nine-screen .stage_img .draft {
             background-image: url(../img/etaps.png);
-            background-size: 2000px;
-            background-position: -1px -1px;
-            width: 330px;
-            height: 330px;
+            background-size: 2500px;
+            background-position: -35px -395px;
+            width: 380px;
+            height: 380px;
     }
 
     .bust-nine-screen .stage_img .model {
             background-image: url(../img/etaps.png);
-            background-size: 2000px;
-            background-position: -340px -1px;
-            width: 330px;
-            height: 330px;
+            background-size: 2500px;
+            background-position: -435px -405px;
+            width: 380px;
+            height: 380px;
     }
 
     .bust-nine-screen .stage_img .form {
             background-image: url(../img/etaps.png);
-            background-size: 2000px;
-            background-position: -670px -1px;
-            width: 330px;
-            height: 330px;
+            background-size: 2500px;
+            background-position: -840px -412px;
+            width: 380px;
+            height: 380px;
     }
 
     .bust-nine-screen .line::before {
             content: '';
             background-color: #453a34;
-            height: 5px;
+            height: 4px;
             width:  100%;
-            margin: 0 20px;
+            margin: 50px 20px 0;
     }
 
     .bust-nine-screen .line .number {
@@ -1356,8 +1409,8 @@ html, body {
             border-radius: 50%;
             border: solid 4px rgb(255, 217, 136);
             background-color: #ffffff;
-            width: 50px;
-            height: 50px;
+            width: 55px;
+            height: 55px;
             font-size: 38px;
             font-family: "Acrom-Bold";
             color: rgb(69, 58, 52);
@@ -1365,6 +1418,7 @@ html, body {
             line-height: 1.053;
             text-align: center;
             margin-top: -30px;
+            padding: 3px 3px 0 0;
     }
 
     .bust-nine-screen .left_right {
@@ -1395,10 +1449,10 @@ html, body {
             flex-wrap: wrap;
     }
 
-    .bust-nine-screen .stage  {
+    .bust-nine-screen .stage_text .stage  {
             box-sizing: border-box;
             width: 33.333%;
-            padding: 20px;
+            padding: 12px 20px;
     }
 
     .bust-nine-screen .center_word {
@@ -1407,6 +1461,8 @@ html, body {
             text-transform: uppercase;
             line-height: 1.538;
             text-align: center;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
     }
 
     .bust-nine-screen .stage_text {
@@ -1414,6 +1470,7 @@ html, body {
             font-family: "Raleway-Regular";
             line-height: 1.667;
             text-align: justify;
+            letter-spacing: 1.2px;
     }
 
 
