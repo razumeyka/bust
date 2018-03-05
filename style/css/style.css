@@ -1088,7 +1088,7 @@ html, body {
 
     .bust-fifth-screen .bust_types .bust img {
             height: 457px;
-            width: 373px;
+            width: 100.005%;
             margin-bottom: -4px;
     }
 
@@ -1519,6 +1519,15 @@ html, body {
 		.third-screen-elem:nth-child(3) {
 			display: none;
 		}
+        
+        .bust-fifth-screen .bust_types .bust_wrapper {
+            width: 100%; 
+            margin: 20px auto;
+        }
+        
+        .bust-fifth-screen .bust_types .bust {
+            width: 373px;
+        } 
 	}
 	
 	@media(max-width: 1145px) {
@@ -1655,7 +1664,11 @@ html, body {
 		.third-screen-elem:nth-child(3) {
 			display: block;
 		}
-	}
+	
+        .wpcf7-form-control-wrap {
+            width: 50%;
+        }
+    }
 
 	@media(max-width: 785px) {
 		.wrapper { 
@@ -1765,6 +1778,11 @@ html, body {
 	    .third-screen-elem > a > span {
 			font-size: 20px;
 	    }
+        
+        .wpcf7-form-control-wrap {
+            width: 100%;
+        }
+        
 	}
 
 	@media(max-width: 485px) {
