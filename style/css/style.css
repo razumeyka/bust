@@ -7,6 +7,9 @@ html, body {
 	background-color: #fff;
 	overflow-x: hidden;
     color: #2e2723;
+}
+
+p, ul, blockquote {
     line-height: 1.4;
 }
 
@@ -881,7 +884,7 @@ html, body {
     }
 
     .bust-second-screen {
-            padding: 27px 0;
+            padding: 50px 0 0;
     }
 
     .bust-second-screen .free_sketch {
@@ -897,7 +900,7 @@ html, body {
     .wpcf7-form {
             display: flex;
             flex-wrap: wrap;
-            margin: 0 -10px;
+            margin: 22px -10px 26px;
     }
 
     .wpcf7-form-control-wrap {
@@ -937,7 +940,7 @@ html, body {
 /* bust-third-screen */
 
     .bust-third-screen {
-            padding: 68px 0 0;
+            padding: 72px 0 0;
     }
 
     .bust-third-screen .wrapper, .bust-seventh-screen .wrapper {
@@ -997,10 +1000,10 @@ html, body {
 
 /* bust-fourth-screen */
     .bust-fourth-screen {
-            padding: 48px 0 40px;
+            padding: 34px 0 40px;
     }
 
-    .bust-fourth-screen .about_bust {
+    .bust-fourth-screen p {
             font-size: 18px;
             font-family: "Raleway-Medium";
             text-align: justify;
@@ -1016,7 +1019,7 @@ html, body {
             font-family: "Raleway-Medium";
             text-align: justify;
             position: relative;
-            padding: 23px 35px 40px 140px;
+            padding: 7px 35px 35px 140px;
             margin: 23px 0;
             letter-spacing: 1.3px;
     }
@@ -1039,7 +1042,7 @@ html, body {
 
 /* bust-fifth-screen */
     .bust-fifth-screen {
-            padding: 71px 0 80px;
+            padding: 75px 0 80px;
     }
 
     h2 {
@@ -1055,24 +1058,24 @@ html, body {
             letter-spacing: 2px;
     }
 
-    .after_h2 {
+    .bust-fifth-screen p {
             font-size: 18px;
             font-family: "Raleway-Medium";
             text-align: left;
-            padding: 8px 0 20px;
             letter-spacing: 1.6px;
+            margin: 13px 0 23px;
     }
 
     .bust-fifth-screen .bust_types {
             display: flex;
             flex-wrap: wrap;
-            margin: 0 -20px;
+            margin: 0 -25px;
     }
 
     .bust-fifth-screen .bust_types .bust_wrapper {
             box-sizing: border-box;
             width: 33.333%; 
-            padding: 0 20px;
+            padding: 0 25px;
     }
 
     .bust-fifth-screen .bust_types .bust {
@@ -1099,7 +1102,7 @@ html, body {
 
     .bust-fifth-screen .bust_types .bust .description {
             background-color: #453a34;
-            padding: 20px;
+            padding: 35px 20px;
             font-size: 15px;
             font-family: "Acrom-Bold";
             color: rgb(255, 255, 255);
@@ -1110,7 +1113,7 @@ html, body {
 
 /* bust-sixth-screen */
     .bust-sixth-screen {
-            padding: 65px 0;
+            padding: 68px 0;
     }
 
     .bust-sixth-screen .wrapper {
@@ -1118,15 +1121,16 @@ html, body {
     }
 
     .bust-sixth-screen .postament {
-            max-width: 800px;
+            max-width: 780px;
     }
 
-    .bust-sixth-screen .postament .about_postament {
+    .bust-sixth-screen .postament p {
             font-size: 18px;
+            font-family: "Raleway-Medium";
             font-family: "Raleway-Medium";
             text-align: justify;
             letter-spacing: 1.1px;
-            margin: 19px 0 0;
+            margin: 23px 0;
     }
 
     .bust-sixth-screen .postament .colors {
@@ -1177,12 +1181,11 @@ html, body {
 
     .bust-sixth-screen .bust_category2 {
             background-image: url(../img/bust_category.png);
-            background-size: 3600px;
-            background-position: -875px bottom;
-            width: 582px;
-            height: 630px;
+            background-position: -920px bottom;
+            width: 550px;
+            height: 645px;
             position: absolute;
-            top: -75px;
+            top: -65px;
             right: -150px;
     }
 
@@ -1192,14 +1195,18 @@ html, body {
     }
 
     .bust-seventh-screen .bust_category3 {
-            background-position: -1480px bottom;
-            width: 740px;
-            left: -215px;
+            background-position: -1490px bottom;
+            width: 720px;
+            left: -120px;
+    }
+
+    .bust-seventh-screen ul {
+            margin: 28px 5px 50px 0;
     }
 
 /* bust-eight-screen */
     .bust-eight-screen {
-            padding-top: 64px;
+            padding: 64px 0 85px;
     }
 
     .bust-eight-screen .wrapper {
@@ -1207,7 +1214,6 @@ html, body {
     }
 
     .bust-eight-screen .after_h3 {
-            margin: 9px 0;
             letter-spacing: 1.4px;
     }
 
@@ -1215,7 +1221,7 @@ html, body {
             font-size: 18px;
             font-family: "Raleway-Medium";
             text-align: justify;
-            margin: 10px 0;
+            margin: 20px 0;
             letter-spacing: 1.2px;
     }
 
@@ -1243,22 +1249,18 @@ html, body {
 
     .bust-eight-screen .bust_category5 {
             background-image: url(../img/bust_category.png);
-            background-size: 3600px;
             background-position: -2310px -6px;
             width: 410px;
             height: 360px;
     }
 
      .bust-eight-screen .quote .green .icon {
-            background: url(../img/sprites.svg) -998px -155px;
+            background: url(../img/sprites.svg) -988px -155px;
     }
 
     .bust-eight-screen .quote {
-            margin: 23px 0 30px;
-    }
-
-    .bust-eight-screen .quote .quote_text {
-            padding: 12px 0 10px;
+            margin: 23px 0 35px;
+            padding: 32px 35px 40px 140px;
     }
 
     .bust-eight-screen .type_creating {
@@ -1267,22 +1269,21 @@ html, body {
     }
 
     .bust-eight-screen .type_creating .text {
-            padding: 42px 42px 42px 0;
             max-width: 570px;
     }
 
     .bust-eight-screen .bust_category6 {
             background-image: url(../img/bust_category.png);
-            background-position: -2774px -220px;
+            background-position: -2820px -220px;
             width: 800px;
             height: 519px;
             position: absolute;
-            bottom: 0;
+            bottom: -85px;
             right: -210px;
     }
 /* bust-nine-screen */
     .bust-nine-screen {
-            padding: 50px 0 70px;
+            padding: 70px 0 80px;
     }
     .bust-nine-screen h2 {
            letter-spacing: 1.5px;
@@ -1315,19 +1316,21 @@ html, body {
 
      .bust-nine-screen .carousel .one_step {
             float: left;
-            width: 2.5%;
+            width: 3.5%;
+            position: relative;
     }
 
     .bust-nine-screen .step {
             background-image: url(../img/etaps.png);
-            width: 380px;
+            width: 400px;
             height: 380px;
             box-sizing: border-box;
             padding: 0 20px;
+            margin: 25px 0;
     }
 
     .bust-nine-screen .draft {
-            background-position: -35px -395px;
+            background-position: -5px -395px;
     }
 
     .bust-nine-screen .model {
@@ -1338,14 +1341,33 @@ html, body {
             background-position: -840px -412px;
     }
 
+    .bust-nine-screen .number {
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: solid 4px rgb(255, 217, 136);
+            background-color: #ffffff;
+            width: 55px;
+            height: 55px;
+            font-size: 38px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            position: absolute;
+            z-index: 1;
+            left: 37%;
+            top: 420px;
+            line-height: 1.3;
+    }
+
     .bust-nine-screen .stage  {
             box-sizing: border-box;
-            padding: 12px 20px;
+            padding: 62px 10px 10px;
             font-size: 18px;
             font-family: "Raleway-Regular";
             text-align: justify;
             letter-spacing: 1.2px;
             width: 380px;
+            line-height: 1.7;
     }
 
     .bust-nine-screen .center_word {
@@ -1362,29 +1384,16 @@ html, body {
             background-color: #453a34;
             height: 4px;
             width:  100%;
-            margin: 50px 20px 0;
-    }
-
-    .bust-nine-screen .line .number {
-            box-sizing: border-box;
-            border-radius: 50%;
-            border: solid 4px rgb(255, 217, 136);
-            background-color: #ffffff;
-            width: 55px;
-            height: 55px;
-            font-size: 38px;
-            font-family: "Acrom-Bold";
-            text-transform: uppercase;
-            text-align: center;
-            margin-top: -30px;
-            padding: 3px 3px 0 0;
+            position: absolute;
+            left: 0;
+            top: 447px;
     }
 
     .bust-nine-screen .carousel .control {
             position: absolute;
             width: 50px;
             height: 50px;
-            top: 46%;
+            top: 425px;
             cursor: pointer;
             box-sizing: border-box;
             border: solid 4px rgb(255, 217, 136);
@@ -1392,12 +1401,12 @@ html, body {
 
     .bust-nine-screen .control.prew {
             background: url(../img/sprites.svg) -225px -105px;
-            left: -50px;
+            left: -75px;
     }
 
     .bust-nine-screen .control.next {
             background: url(../img/sprites.svg) -285px -105px;
-            right: -50px;
+            right: -75px;
     }
 
 
@@ -1434,6 +1443,10 @@ html, body {
 		.fourth-screen-elem > p {
 			font-size: 22px;
 		}
+        
+        .bust-sixth-screen .bust_category2 {
+            display: none;
+        }
 	}
 
 	@media(max-width: 1185px) {
@@ -1445,14 +1458,50 @@ html, body {
 			display: none;
 		}
         
+        .bust-third-screen .bust_category1, .bust-seventh-screen .bust_category3 {
+            top: 80px;
+            bottom: auto;
+        }
+
+        .bust-third-screen ul, .bust-seventh-screen ul {
+            padding-top: 625px;
+            float: none;
+            max-width: 1100px;
+        }
+        
         .bust-fifth-screen .bust_types .bust_wrapper {
             width: 100%; 
-            margin: 20px auto;
         }
         
         .bust-fifth-screen .bust_types .bust {
-            width: 373px;
+            max-width: 373px;
+            margin: 20px auto;
         } 
+        
+        .bust-eight-screen .scheme {
+            flex-direction: column;
+        }
+        
+        .bust-eight-screen .bust_category4, .bust-eight-screen .bust_category5 {
+            margin: 0 auto;
+        }
+        
+        .bust-eight-screen .icon {
+            background: url(../img/sprites.svg) -135px -215px;
+            height: 150px;
+            margin: 0 auto;
+        }
+        
+        .bust-eight-screen .type_creating .text {
+            padding-bottom: 480px;
+            max-width: 1100px;
+        }
+        
+        .bust-eight-screen .bust_category6 {
+            bottom: -85px;
+            left: 0;
+            right: auto;
+        }
 	}
 	
 	@media(max-width: 1145px) {
@@ -1599,6 +1648,11 @@ html, body {
 		.wrapper { 
 			padding: 0 15px 0 15px;
 		}
+        
+        .bust-sixth-screen .postament .colors .color_wrapper {
+            width: 50%;
+            padding: 20px;
+        }
 	}
 
 	@media(max-width: 745px) {
@@ -1638,12 +1692,31 @@ html, body {
 			width: 375px;
 			height: 375px;
 		}
+        
+        .bust-eight-screen .bust_category6 {
+            background-size: 1600px;
+            background-position: -2835px -90px;
+            width: 360px;
+            height: 240px;
+        }
+        
+        .bust-eight-screen .type_creating .text {
+            padding-bottom: 180px;
+        }
 	}
 
 	@media(max-width: 665px) {
 		.fourth-screen-elem {
 			width: 100%;
 		}
+        
+        .quote, .bust-eight-screen .quote {
+            padding: 7px 20px;
+        }
+
+        .bust-fourth-screen .quote .green, .bust-eight-screen .quote .green {
+            display: none;
+        }
 	}
 
 	@media(max-width: 625px) {
@@ -1670,6 +1743,20 @@ html, body {
 		.form-box > form > span > .button {
 			max-width: 100%;
 		}
+        
+        .bust-eight-screen .bust_category4 {
+            background-size: 2100px;
+            background-position: -1325px -225px;
+            width: 280px;
+            height: 210px;
+        }
+        
+        .bust-eight-screen .bust_category5 {
+            background-size: 2100px;
+            background-position: -3450px -1px;
+            width: 230px;
+            height: 220px;
+        }
 	}
 
 	@media(max-width: 550px) {
@@ -1681,6 +1768,23 @@ html, body {
 		.fourth-screen-elem > p {
 			width: 100%;
 		}
+        
+        .bust-third-screen .bust_category1, .bust-seventh-screen .bust_category3 {
+            background-size: 1600px;
+            width: 370px;
+            height: 315px;
+            top: 150px;
+            left: -35px;
+        }
+        
+        .bust-seventh-screen .bust_category3 {
+            background-position: -660px bottom;
+            width: 320px;
+        }
+        
+        .bust-third-screen ul, .bust-seventh-screen ul {
+            padding-top: 320px;
+        }
 	}
 
 	@media(max-width: 500px) {
@@ -1734,6 +1838,10 @@ html, body {
 			width: 100%;
 			float: none;
 		}
+        
+        .bust-sixth-screen .postament .colors .color_wrapper {
+            width: 100%;
+        }
 	}
 
 	@media(max-width: 425px) {
