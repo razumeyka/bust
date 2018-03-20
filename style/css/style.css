@@ -1312,20 +1312,22 @@ p, ul, blockquote {
             -moz-transition: all 0.15s linear 0s;
             -o-transition: all 0.15s linear 0s;
             transition: all 0.15s linear 0s;
+            margin: 0 -20px;
     }
 
      .bust-nine-screen .carousel .one_step {
             float: left;
-            width: 3.5%;
+            width: 2.5%;
             position: relative;
+            padding: 0 20px;
+            box-sizing: border-box;
     }
 
     .bust-nine-screen .step {
             background-image: url(../img/etaps.png);
-            width: 400px;
+            width: 100%;
             height: 380px;
             box-sizing: border-box;
-            padding: 0 20px;
             margin: 25px 0;
     }
 
@@ -1354,7 +1356,9 @@ p, ul, blockquote {
             padding-bottom: 5px;
             position: absolute;
             z-index: 1;
-            left: 37%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
             top: 420px;
             line-height: 1.3;
     }
@@ -1366,7 +1370,7 @@ p, ul, blockquote {
             font-family: "Raleway-Regular";
             text-align: justify;
             letter-spacing: 1.2px;
-            width: 380px;
+            width: 100%;
             line-height: 1.7;
     }
 
