@@ -1019,9 +1019,13 @@ p, ul, blockquote {
             font-family: "Raleway-Medium";
             text-align: justify;
             position: relative;
-            padding: 7px 35px 35px 140px;
+            padding: 5px 35px 35px 140px;
             margin: 23px 0;
             letter-spacing: 1.3px;
+    }
+
+    .bust-fourth-screen .quote p {
+            margin: 0;
     }
 
     .bust-fourth-screen .quote .green, .bust-eight-screen .quote .green         {
@@ -1109,11 +1113,13 @@ p, ul, blockquote {
             text-transform: uppercase;
             text-align: center;
             letter-spacing: 1.1px;
+            line-height: 1.4;
     }
 
 /* bust-sixth-screen */
     .bust-sixth-screen {
             padding: 68px 0;
+            overflow: hidden;
     }
 
     .bust-sixth-screen .wrapper {
@@ -1136,13 +1142,13 @@ p, ul, blockquote {
     .bust-sixth-screen .postament .colors {
             display: flex;
             flex-wrap: wrap;
-            margin: 32px -20px;
+            margin: 32px -15px;
     }
 
     .bust-sixth-screen .postament .colors .color_wrapper {
             box-sizing: border-box;
             width: 25%;
-            padding: 0 20px;
+            padding: 0 15px;
     }
 
    .bust-sixth-screen .postament .colors .granit {
@@ -1175,7 +1181,7 @@ p, ul, blockquote {
             text-transform: uppercase;
             text-align: center;
             min-height: 50px;
-            padding: 10px;
+            padding: 10px 20px;
             letter-spacing: 1px;
     }
 
@@ -1195,13 +1201,13 @@ p, ul, blockquote {
     }
 
     .bust-seventh-screen .bust_category3 {
-            background-position: -1490px bottom;
+            background-position: -1490px -90px;
             width: 720px;
             left: -120px;
     }
 
     .bust-seventh-screen ul {
-            margin: 28px 5px 50px 0;
+            margin: 28px 0 70px;
     }
 
 /* bust-eight-screen */
@@ -1299,7 +1305,7 @@ p, ul, blockquote {
     }
 
     .bust-nine-screen .carousel .steps_container {
-            width: 100%;
+            width: 133.3333%;
     }
 
     .bust-nine-screen .carousel .carousel_wr {
@@ -1312,19 +1318,20 @@ p, ul, blockquote {
             -moz-transition: all 0.15s linear 0s;
             -o-transition: all 0.15s linear 0s;
             transition: all 0.15s linear 0s;
-            margin: 0 -20px;
+            margin: 0 -10px;
     }
 
      .bust-nine-screen .carousel .one_step {
             float: left;
             width: 2.5%;
             position: relative;
-            padding: 0 20px;
+            padding: 0 10px;
             box-sizing: border-box;
     }
 
     .bust-nine-screen .step {
             background-image: url(../img/etaps.png);
+            background-size: 100% auto; 
             width: 100%;
             height: 380px;
             box-sizing: border-box;
@@ -1332,15 +1339,15 @@ p, ul, blockquote {
     }
 
     .bust-nine-screen .draft {
-            background-position: -5px -395px;
+            background-position: -5px -5px;
     }
 
     .bust-nine-screen .model {
-            background-position: -435px -405px;
+            background-position: 5px -380px;
     }
 
     .bust-nine-screen .form {
-            background-position: -840px -412px;
+            background-position: -5px -810px;
     }
 
     .bust-nine-screen .number {
@@ -1646,6 +1653,10 @@ p, ul, blockquote {
         .wpcf7-form-control-wrap {
             width: 50%;
         }
+        
+        .bust-nine-screen .carousel .steps_container {
+            width: 200%;
+        }
     }
 
 	@media(max-width: 785px) {
@@ -1760,6 +1771,10 @@ p, ul, blockquote {
             background-position: -3450px -1px;
             width: 230px;
             height: 220px;
+        }
+        
+        .bust-nine-screen .carousel .steps_container {
+            width: 400%;
         }
 	}
 
