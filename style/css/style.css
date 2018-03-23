@@ -1420,6 +1420,154 @@ p, ul, blockquote {
             right: -75px;
     }
 
+////* materials */////
+/* material_types */
+
+        .material-types {
+            padding: 50px 0;
+        }
+
+        .material-types h1 {
+            font-size: 30px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 2.3px;
+        }
+
+        .material-types .types {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+        }
+
+        .material-types .types .type {
+            box-sizing: border-box;
+            width: 20%;
+            padding: 0 20px;
+        }
+
+        .material-types .material {
+            background-color: aqua;
+            box-sizing: border-box;
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            margin: 38px auto 35px;
+        }
+
+        .material-types .types .text {
+            font-size: 15px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 1px;
+            letter-spacing: 4px;
+        }
+
+/* materials_about */
+        
+        .materials_about {
+            background: url(../img/meandr_bg.png) rgb(247, 247, 247);
+            background-position: center center;
+            border: solid 1px #dad8d6;
+            padding: 55px 0;
+        }
+
+        .materials_about .material_name {
+            font-size: 56px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            text-align: left;
+            margin: 10px 0;
+            letter-spacing: 4px;
+        }
+
+        .materials_about .about p {
+            font-size: 18px;
+            font-family: "Raleway-Medium";
+            text-align: justify;
+            max-width: 590px;
+            letter-spacing: 1.8px;
+            margin: 30px 0;
+            line-height: 1.7;
+        }
+
+        .materials_about .advantage {
+            font-size: 22px;
+            font-family: "Acrom-Bold";
+            text-transform: uppercase;
+            text-align: Left;
+            padding: 50px 0 20px;
+            letter-spacing: 1.7px;
+        }
+
+/* question_answer */
+
+        .question_answer {
+            background: url(../img/pattern_diagonal.png) rgb(218, 216, 214); 
+            padding: 20px 0;
+        }
+
+        .question_answer .question {
+            position: relative;
+        }
+
+        .question_answer .question .text {
+            box-sizing: border-box;
+            background-color: #ffffff;
+            font-size: 24px;
+            font-family: "Acrom-Medium";
+            text-align: left;
+            padding: 15px 25px;
+            margin-top: 30px;
+            letter-spacing: 1.2px;
+        }
+
+        .question_answer .question .plus {
+            position:absolute;
+            width: 55px;
+            height: 100%;
+            top:0;
+            right:0;
+            bottom:0;
+        }
+
+        .question_answer .question .plus:before {
+            content:"+";
+            box-sizing: border-box;
+            border: solid 2px rgb(69, 58, 52);
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            font-size: 40px;
+            font-family: "Acrom-Medium";
+            color: #2e2723;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto 10px;
+            line-height: 0.7;
+        }
+
+        .question_answer .question.active .plus::before {
+            content:"-";
+        }
+
+        .question_answer .answer {
+            display: none;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            padding: 15px 25px;
+            font-size: 18px;
+            font-family: "Raleway-Regular";
+            text-align: justify;
+            margin-top: 2px;
+            letter-spacing: 1px;
+        }
+
 
 /* Media */
 	@media(max-width: 1300px) {
@@ -1513,8 +1661,8 @@ p, ul, blockquote {
             left: 0;
             right: auto;
         }
-	}
-	
+}
+
 	@media(max-width: 1145px) {
 		.second-screen-elem .elem-link > .elem-img {
 			width: 425px;
@@ -1548,6 +1696,10 @@ p, ul, blockquote {
 			width: 75%;
 			float: none;
 		}
+        
+        .material-types .types .type {
+            width: 33.333%;
+        }
 	}
 
 	@media(max-width: 940px) {
@@ -1776,6 +1928,10 @@ p, ul, blockquote {
         .bust-nine-screen .carousel .steps_container {
             width: 400%;
         }
+        
+        .material-types .types .type {
+            width: 50%;
+        }
 	}
 
 	@media(max-width: 550px) {
@@ -1875,6 +2031,10 @@ p, ul, blockquote {
 		.third-screen-elem:nth-child(3) {
 			display: block;
 		}
+        
+        .material-types .types .type {
+            width: 100%;
+        }
 	}
 
 	@media(max-width: 410px) {

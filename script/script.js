@@ -60,6 +60,24 @@ $(function() {
 	});
 });
 
+$(document).ready(function(){
+    $('.material').click(function(){
+            $('.materials_about');
+    });
+});
+
+
+$(document).ready(function(){
+    $(".answer").hide();
+    $('.question').click(function(){
+            $(this).next().slideToggle(500);
+            $(this).toggleClass('active');
+    });
+});
+
+
+
+
 
 
 
