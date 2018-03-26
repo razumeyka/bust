@@ -60,9 +60,37 @@ $(function() {
 	});
 });
 
+/* materials */
+
+$(function() {
+    $('.smooth').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 500);
+        }
+    });
+});
+
+var slideNow = 1;
+var slideCount = $('#slidewrapper').children().length);
+var navBtnId = 0;
+var translateWidth = 0;
 $(document).ready(function(){
-    $('.material').click(function(){
-            $('.materials_about');
+    $('#slide-btn').click(function nextSlide() {
+            navBtnId = $(this).index();
+            if (navBtnId + 1 != slideNow) {
+                translateWidth = -$('#viewport').width() * (navBtnId);
+                $('#slidewrapper').css({
+                    'transform': 'translate(' + translateWidth + 'px, 0)',
+                    '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
+                    '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
+                });
+                slideNow = navBtnId + 1;
+            }
+        setInterval(nextSlide, 2000);
     });
 });
 

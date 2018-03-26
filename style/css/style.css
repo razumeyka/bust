@@ -1240,7 +1240,6 @@ p, ul, blockquote {
 
     .bust-eight-screen .bust_category4 {
             background-image: url(../img/bust_category.png);
-            background-size: 3600px;
             background-position: -2260px -395px;
             width: 500px;
             height: 345px;
@@ -1420,11 +1419,11 @@ p, ul, blockquote {
             right: -75px;
     }
 
-////* materials */////
+/* materials */
 /* material_types */
 
         .material-types {
-            padding: 50px 0;
+            padding: 50px 0 75px;
         }
 
         .material-types h1 {
@@ -1445,10 +1444,12 @@ p, ul, blockquote {
             box-sizing: border-box;
             width: 20%;
             padding: 0 20px;
+            text-decoration: none;
+            color: #2e2723;
         }
 
         .material-types .material {
-            background-color: aqua;
+            background: url(../img/materials.jpg);
             box-sizing: border-box;
             border-radius: 50%;
             width: 160px;
@@ -1456,13 +1457,32 @@ p, ul, blockquote {
             margin: 38px auto 35px;
         }
 
+        .material-types .type .stone {
+            background-position: -1px -1px;
+        }
+
+        .material-types .type .bronze {
+            background-position: -1px -200px;
+        } 
+
+        .material-types .type .marble {
+            background-position: -1px -400px;
+        } 
+
+        .material-types .type .granite {
+            background-position: -1px -600px;
+        } 
+
+        .material-types .type .artificial {
+            background-position: -1px -800px;
+        } 
+
         .material-types .types .text {
             font-size: 15px;
             font-family: "Acrom-Bold";
             text-transform: uppercase;
             text-align: center;
             letter-spacing: 1px;
-            letter-spacing: 4px;
         }
 
 /* materials_about */
@@ -1472,6 +1492,41 @@ p, ul, blockquote {
             background-position: center center;
             border: solid 1px #dad8d6;
             padding: 55px 0;
+            overflow: hidden;
+        }
+
+        #viewport {
+            width: 100%;
+            display: table;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #slidewrapper {
+            position: relative;
+            width: 500%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+            -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+        }
+
+        .materials_about .wrapper {
+            position: relative;
+            width: 20%;
+            display: inline;
+            float: left;
+            overflow: hidden;
+        }
+
+        .materials_about .slide {
+            width: 100%;
         }
 
         .materials_about .material_name {
@@ -1498,8 +1553,29 @@ p, ul, blockquote {
             font-family: "Acrom-Bold";
             text-transform: uppercase;
             text-align: Left;
-            padding: 50px 0 20px;
+            padding: 50px 0 20px 85px;
             letter-spacing: 1.7px;
+            position: relative;
+        }
+
+        .materials_about .advantage::before {
+            content: "";
+            background: url(../img/sprites.svg);
+            background-position: -9px -386px;
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            left: 0;
+            top: 30px;
+        }
+
+        .materials_about .example {
+            background: url(../img/material_bronze.png);
+            position: absolute;
+            width: 920px;
+            height: 675px;
+            bottom: -60px;
+            right: -280px;
         }
 
 /* question_answer */
