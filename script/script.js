@@ -62,24 +62,32 @@ $(function() {
 
 /* materials */
 
-$(function() {
-    $('.smooth').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 500);
-        }
-    });
-});
+//$(function() {
+//    $('.smooth').on('click', function(event) {
+//        var target = $(this.getAttribute('href'));
+//        if (target.length) {
+//            event.preventDefault();
+//            $('html, body').stop().animate({
+//                scrollTop: target.offset().top
+//            }, 500);
+//        }
+//    });
+//});
 
-var slideNow = 1;
-var slideCount = $('#slidewrapper').children().length);
-var navBtnId = 0;
-var translateWidth = 0;
 $(document).ready(function(){
-    $('#slide-btn').click(function nextSlide() {
+    $('#slide-btn').click(function() {
+            var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 500);
+                };
+        
+            var slideNow = 1;
+            var slideCount = $('#slidewrapper').children().length;
+            var navBtnId = 0;
+            var translateWidth = 0;
             navBtnId = $(this).index();
             if (navBtnId + 1 != slideNow) {
                 translateWidth = -$('#viewport').width() * (navBtnId);
@@ -90,18 +98,23 @@ $(document).ready(function(){
                 });
                 slideNow = navBtnId + 1;
             }
-        setInterval(nextSlide, 2000);
     });
-});
-
-
-$(document).ready(function(){
+    
     $(".answer").hide();
     $('.question').click(function(){
             $(this).next().slideToggle(500);
             $(this).toggleClass('active');
-    });
+    });   
 });
+
+
+//$(document).ready(function(){
+//    $(".answer").hide();
+//    $('.question').click(function(){
+//            $(this).next().slideToggle(500);
+//            $(this).toggleClass('active');
+//    });
+//});
 
 
 
