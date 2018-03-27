@@ -1508,9 +1508,9 @@ p, ul, blockquote {
             left: 0;
             margin: 0;
             padding: 0;
-            -webkit-transition: all 0.5s linear 0s;
-            -o-transition: all 0.5s linear 0s;
-            transition: all 0.5s linear 0s;
+            transition: margin-left 0.5s linear 0s;
+            -webkit-transition: margin-left 0.5s linear 0s;
+            -o-transition: margin-left 0.5s linear 0s;
         }
 
         .materials_about .wrapper {
