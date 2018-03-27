@@ -1498,7 +1498,6 @@ p, ul, blockquote {
         #viewport {
             width: 100%;
             position: relative;
-            overflow: hidden;
         }
 
         #slidewrapper {
@@ -1513,16 +1512,15 @@ p, ul, blockquote {
             -o-transition: margin-left 0.5s linear 0s;
         }
 
-        .materials_about .wrapper {
-            position: relative;
+        .materials_about .slide {
             width: 20%;
             display: inline;
             float: left;
-            overflow: hidden;
         }
 
-        .materials_about .slide {
+        .materials_about .wrapper {
             width: 100%;
+            position: relative;
         }
 
         .materials_about .material_name {
