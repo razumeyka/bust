@@ -1491,7 +1491,7 @@ p, ul, blockquote {
             background: url(../img/meandr_bg.png) rgb(247, 247, 247);
             background-position: center center;
             border: solid 1px #dad8d6;
-            padding: 55px 0;
+            padding-top: 55px;
             overflow: hidden;
         }
 
@@ -1516,10 +1516,10 @@ p, ul, blockquote {
             width: 20%;
             display: inline;
             float: left;
+            overflow: hidden;
         }
 
         .materials_about .wrapper {
-            width: 100%;
             position: relative;
         }
 
@@ -1568,7 +1568,7 @@ p, ul, blockquote {
             position: absolute;
             width: 920px;
             height: 675px;
-            bottom: -60px;
+            bottom: -65px;
             right: -280px;
         }
 
@@ -1576,7 +1576,8 @@ p, ul, blockquote {
 
         .question_answer {
             background: url(../img/pattern_diagonal.png) rgb(218, 216, 214); 
-            padding: 20px 0;
+            padding: 20px 0 40px;
+            margin-top: 65px;
         }
 
         .question_answer .question {
