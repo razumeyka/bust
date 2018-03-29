@@ -1286,6 +1286,7 @@ p, ul, blockquote {
             bottom: -85px;
             right: -210px;
     }
+
 /* bust-nine-screen */
     .bust-nine-screen {
             padding: 70px 0 80px;
@@ -1419,6 +1420,213 @@ p, ul, blockquote {
             right: -75px;
     }
 
+/* catalog */
+/* catalog-first-screen */
+
+    .catalog-first-screen {
+        background-image: url(../img/types_bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 280px;
+    }
+
+/* catalog-second-screen */
+
+    .catalog-second-screen {
+        background-color: #f7f7f7;
+        padding: 60px 0;
+        overflow: hidden;
+    }
+
+    .catalog-second-screen aside {
+        background-color: #efefef;
+        width: 300px;
+        float: left;
+        margin-right: 40px;
+        letter-spacing: 2px;
+    }
+
+    .catalog-second-screen aside .filter {
+        font-size: 22px;
+        font-family: "Acrom-Bold";
+        text-transform: uppercase;
+        text-align: left;
+        padding: 27px 20px 0;
+    }
+
+    .catalog-second-screen aside .price_filter {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .catalog-second-screen aside .price input {
+        display: block;
+        padding: 0 15px;
+        margin: 23px 0 28px;
+        font-size: 14px;
+        box-sizing: border-box;
+        border: solid 1px #ffd57a;
+        outline-color:#ffd57a;
+        height: 40px;
+        width: 100px;
+    }
+
+    .catalog-second-screen aside .price .symbol1 {
+       font-size: 18px;
+       font-family: "Raleway-Medium";
+       padding: 30px 10px;
+    }
+
+    .catalog-second-screen aside .price .symbol2 {
+        font-size: 30px;
+        font-family: "Raleway-Medium";
+        padding: 25px 10px;
+    }
+
+    .catalog-second-screen aside ul {
+       margin: 0;
+       padding: 10px 20px;
+    }
+
+    .catalog-second-screen aside ul li {
+        font-size: 18px;
+        font-family: "Raleway-Medium";
+        line-height: 2.222;
+        list-style: none;
+        text-align: left;
+    }
+
+    .catalog-second-screen aside ul li a {
+        text-decoration: none;
+        color: rgb(69, 58, 52);
+    }
+
+    .catalog-second-screen .catalog_cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -40px;
+    }
+
+    .catalog-second-screen .catalog_cards .catalog_card {
+        box-sizing: border-box;
+        width: 50%;
+        padding: 0 40px 78px;
+        text-align: left;
+    }
+
+    .catalog-second-screen .catalog_card .sculpture_photo {
+        background-color: aqua;
+        width: 100%;
+        height: 440px;
+    }
+
+    .catalog-second-screen .catalog_card .sculpture_price {
+        font-size: 36px;
+        font-family: "Acrom-Bold";
+        text-transform: uppercase;
+        padding: 23px 0 16px;
+    }
+
+    .catalog-second-screen .catalog_card .sculpture_name {
+        font-size: 22px;
+        font-family: "Acrom-Bold";
+        letter-spacing: 1.7px;
+    }
+
+    .catalog-second-screen .catalog_card .sculpture_description {
+        font-size: 16px;
+        font-family: "Raleway-Medium";
+        padding: 15px 0;
+        letter-spacing: 1px;
+    }
+
+    .catalog-second-screen .catalog_cards button {
+        display: block;
+        background-color: #ffd57a;
+        box-sizing: border-box;
+        border: solid 1px rgb(204, 170, 98);
+        cursor: pointer;
+        height: 56px;
+        width: 82%;
+        margin: 15px 0;
+        padding: 15px;
+        font-size: 18px;
+        font-family: "Acrom-Medium";
+        text-transform: uppercase;
+        text-align: center;
+        outline: none;
+        letter-spacing: 1.5px;
+    }
+
+    .catalog-pagination {
+        padding: 35px 0 70px;
+        margin-left: 30px;
+    }
+
+    .catalog-pagination .pagination-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .pagination-list li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .pagination-list li a {
+        font-size: 18px;
+        font-family: "Acrom-Bold";
+        color: rgb(69, 58, 52);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+    }
+
+    .pagination-list .prev, .pagination-list .next {
+        position: relative;
+        padding: 0 20px;
+    }
+
+    .pagination-list .prev::before {
+        content: "";
+        background: url(../img/sprites.svg) -90px -40px;
+        background-size: 400px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;    
+    }
+
+    .pagination-list .bordered {
+        font-size: 30px;
+        box-sizing: border-box;
+        padding: 10px 13px;
+        border: 1px solid rgb(69, 58, 52);
+        background-color: #ffffff;
+    }
+
+    .pagination-list .points {
+        font-size: 30px;
+        margin: 0 10px;
+    }
+
+    .pagination-list .next::after {
+        content: "";
+        background: url(../img/sprites.svg) -110px -40px;
+        background-size: 400px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+
 /* materials */
 /* material_types */
 
@@ -1455,6 +1663,7 @@ p, ul, blockquote {
             width: 160px;
             height: 160px;
             margin: 38px auto 35px;
+            cursor: pointer;
         }
 
         .material-types .type .stone {
@@ -1489,7 +1698,7 @@ p, ul, blockquote {
         
         .materials_about {
             background: url(../img/meandr_bg.png) rgb(247, 247, 247);
-            background-position: center center;
+            background-position:  top center;
             border: solid 1px #dad8d6;
             padding-top: 55px;
             overflow: hidden;
@@ -1582,6 +1791,7 @@ p, ul, blockquote {
 
         .question_answer .question {
             position: relative;
+            cursor: pointer;
         }
 
         .question_answer .question .text {

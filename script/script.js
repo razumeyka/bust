@@ -54,14 +54,22 @@ $(document).ready(function(){
 	});
 
 	$( window ).resize(function() {
-		var w=$('.third-screen').find('.third-screen-box').find('.third-screen-elem').width();
+		var w=$('.third-screen .third-screen-box .third-screen-elem').width();  
 		$('.res_height').css('height',w+'px');
 		
-	});
+	}); 
+    
+//    $(window).resize(function() {
+//        $('.step').css('height');
+//        parseInt()
+//        var a=
+//        $('.step').css('height', a*2+'px'); 
+//    })
     
     var slideNow = 1;   
-    var slideCount = $('#slidewrapper').children().length;
+    var slideCount = console.log($('#slidewrapper .slide').length);
     var navBtnId = 0;
+    
     $('.smooth').click(function() {   
             navBtnId = $(this).index();
                 $('#slidewrapper').css(
@@ -78,34 +86,4 @@ $(document).ready(function(){
             $(this).toggleClass('active');
     });   
 });
-
-//$(function() {
-//    $('.smooth').on('click', function(event) {
-//        var target = $(this.getAttribute('href'));
-//        if (target.length) {
-//            event.preventDefault();
-//            $('html, body').stop().animate({
-//                scrollTop: target.offset().top
-//            }, 500);
-//        }
-//    });
-//});
-
-
-//                    .css({
-//                    'transform': 'translate(' + translateWidth + 'px, 0)',
-//                    '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
-//                    '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
-//                });
-
-
-//$(document).ready(function(){
-//    $(".answer").hide();
-//    $('.question').click(function(){
-//            $(this).next().slideToggle(500);
-//            $(this).toggleClass('active');
-//    });
-//});
-
-
 
