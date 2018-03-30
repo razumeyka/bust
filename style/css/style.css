@@ -1443,7 +1443,6 @@ p, ul, blockquote {
         background-color: #efefef;
         width: 300px;
         float: left;
-        margin-right: 40px;
         letter-spacing: 2px;
     }
 
@@ -1465,12 +1464,13 @@ p, ul, blockquote {
         display: block;
         padding: 0 15px;
         margin: 23px 0 28px;
-        font-size: 14px;
+        font-size: 18px;
+        font-family: "Acrom";
         box-sizing: border-box;
-        border: solid 1px #ffd57a;
+        border: solid 1px rgb(204, 170, 98);
         outline-color:#ffd57a;
-        height: 40px;
-        width: 100px;
+        height: 42px;
+        width: 99px;
     }
 
     .catalog-second-screen aside .price .symbol1 {
@@ -1479,10 +1479,22 @@ p, ul, blockquote {
        padding: 30px 10px;
     }
 
-    .catalog-second-screen aside .price .symbol2 {
+    .catalog-second-screen .symbol_rur {
         font-size: 30px;
         font-family: "Raleway-Medium";
-        padding: 25px 10px;
+        padding: 25px 11px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .catalog-second-screen .symbol_rur:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 10px;
+        top: 48px;
+        left: 11px;
+        background-color: rgb(69, 58, 52);
     }
 
     .catalog-second-screen aside ul {
@@ -1506,20 +1518,22 @@ p, ul, blockquote {
     .catalog-second-screen .catalog_cards {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -40px;
     }
 
     .catalog-second-screen .catalog_cards .catalog_card {
         box-sizing: border-box;
         width: 50%;
-        padding: 0 40px 78px;
+        padding: 0 0 78px 90px;
+    }
+
+    .catalog-second-screen .catalog_cards .catalog_card {
         text-align: left;
     }
 
     .catalog-second-screen .catalog_card .sculpture_photo {
         background-color: aqua;
         width: 100%;
-        height: 440px;
+        height: 441px;
     }
 
     .catalog-second-screen .catalog_card .sculpture_price {
@@ -1527,6 +1541,20 @@ p, ul, blockquote {
         font-family: "Acrom-Bold";
         text-transform: uppercase;
         padding: 23px 0 16px;
+        letter-spacing: 1.7px;
+    }
+
+    .catalog-second-screen .sculpture_price .symbol_rur {
+        font-size: 36px;
+        font-family: "Raleway-Bold";
+        padding: 0;
+    }
+
+    .catalog-second-screen .sculpture_price .symbol_rur:before {
+        height: 4px;
+        width: 11px;
+        top: 27px;
+        left: 1px;
     }
 
     .catalog-second-screen .catalog_card .sculpture_name {
@@ -1538,7 +1566,8 @@ p, ul, blockquote {
     .catalog-second-screen .catalog_card .sculpture_description {
         font-size: 16px;
         font-family: "Raleway-Medium";
-        padding: 15px 0;
+        padding: 12px 0 5px;
+        line-height: 1.625;
         letter-spacing: 1px;
     }
 
@@ -1548,8 +1577,8 @@ p, ul, blockquote {
         box-sizing: border-box;
         border: solid 1px rgb(204, 170, 98);
         cursor: pointer;
-        height: 56px;
-        width: 82%;
+        height: 59px;
+        width: 80%;
         margin: 15px 0;
         padding: 15px;
         font-size: 18px;
@@ -1561,8 +1590,7 @@ p, ul, blockquote {
     }
 
     .catalog-pagination {
-        padding: 35px 0 70px;
-        margin-left: 30px;
+        padding: 26px 0 60px 80px;
     }
 
     .catalog-pagination .pagination-list {
@@ -1602,12 +1630,17 @@ p, ul, blockquote {
         top: 0;    
     }
 
-    .pagination-list .bordered {
-        font-size: 30px;
+    .pagination-list .bordered  {
         box-sizing: border-box;
-        padding: 10px 13px;
+        padding: 10px 5px;
+        width: 51px;
+        height: 62px;
         border: 1px solid rgb(69, 58, 52);
         background-color: #ffffff;
+    }
+
+    .pagination-list .bordered a {
+        font-size: 30px;
     }
 
     .pagination-list .points {
