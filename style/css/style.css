@@ -1439,6 +1439,42 @@ p, ul, blockquote {
         overflow: hidden;
     }
 
+    .catalog-second-screen .filter_button {
+        position: relative;
+    }
+
+    .catalog-second-screen .filter_button button {
+        display: block;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        border: solid 1px rgb(204, 170, 98);
+        cursor: pointer;
+        height: 58px;
+        width: 272px;
+        margin: 3px 0 18px;
+        padding: 15px;
+        font-size: 18px;
+        font-family: "Acrom-Bold";
+        text-transform: uppercase;
+        text-align: left;
+        outline: none;
+        letter-spacing: 1.5px;
+    }
+
+     .catalog-second-screen .filter_button .arrow {
+        background: url(../img/sprites.svg) -220px -96px;
+        position: absolute;
+        width: 55px;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 220px;
+    }
+
+     .catalog-second-screen .filter_button .arrow.active {
+        background: url(../img/sprites.svg) -280px -96px;
+    }
+
     .catalog-second-screen aside {
         background-color: #efefef;
         width: 300px;
@@ -1524,9 +1560,6 @@ p, ul, blockquote {
         box-sizing: border-box;
         width: 50%;
         padding: 0 0 78px 90px;
-    }
-
-    .catalog-second-screen .catalog_cards .catalog_card {
         text-align: left;
     }
 
@@ -2015,6 +2048,30 @@ p, ul, blockquote {
             width: 33.333%;
         }
 	}
+
+    @media(max-width: 1024px) {
+        .catalog-second-screen aside {
+            display: none;
+            width: 100%;
+            float: none;
+        }
+        
+        .catalog-second-screen .wrapper {
+            padding: 0 15px;
+        }
+        
+        .catalog-second-screen .catalog_cards {
+            padding: 0 50px;
+        }
+        
+        .catalog-second-screen .catalog_cards .catalog_card {
+            padding: 50px 45px 78px;
+        }
+        
+        .catalog-pagination {
+            padding: 26px 0 60px 40px;
+        }
+    }
 
 	@media(max-width: 940px) {
 		.menu {
