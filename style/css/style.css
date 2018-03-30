@@ -1444,7 +1444,7 @@ p, ul, blockquote {
     }
 
     .catalog-second-screen .filter_button button {
-        display: block;
+        display: none;
         box-sizing: border-box;
         background-color: #ffffff;
         border: solid 1px rgb(204, 170, 98);
@@ -2050,6 +2050,11 @@ p, ul, blockquote {
 	}
 
     @media(max-width: 1024px) {
+        
+        .catalog-second-screen .filter_button button {
+        display: block;
+        }
+        
         .catalog-second-screen aside {
             display: none;
             width: 100%;

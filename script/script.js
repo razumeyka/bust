@@ -66,7 +66,6 @@ $(document).ready(function(){
 //        $('.step').css('height', a*2+'px'); 
 //    })
     
-    $('.catalog-second-screen aside').hide();
     $('.filter_button').click(function(){
             $('.catalog-second-screen aside').slideToggle(700);
             $('.arrow').toggleClass('active');
