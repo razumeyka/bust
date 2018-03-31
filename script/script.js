@@ -67,7 +67,7 @@ $(document).ready(function(){
 //    })
     
     $('.filter_button').click(function(){
-            $('.catalog-second-screen aside').slideToggle(700);
+            $('.filters').slideToggle(700);
             $('.arrow').toggleClass('active');
     });
     

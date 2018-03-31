@@ -18,7 +18,6 @@ p, ul, blockquote {
 	padding: 0 40px 0 40px;
 	width: auto;
 	max-width: 1200px;
-	text-align: center;
 }
 
 /* Fonts */
@@ -1440,11 +1439,12 @@ p, ul, blockquote {
     }
 
     .catalog-second-screen .filter_button {
+        display: none;
         position: relative;
     }
 
-    .catalog-second-screen .filter_button button {
-        display: none;
+    .catalog-second-screen .filter_button .button {
+        display: block;
         box-sizing: border-box;
         background-color: #ffffff;
         border: solid 1px rgb(204, 170, 98);
@@ -1452,13 +1452,15 @@ p, ul, blockquote {
         height: 58px;
         width: 272px;
         margin: 3px 0 18px;
-        padding: 15px;
+        padding: 20px;
         font-size: 18px;
         font-family: "Acrom-Bold";
         text-transform: uppercase;
         text-align: left;
         outline: none;
         letter-spacing: 1.5px;
+        color: rgb(69, 58, 52);
+        text-decoration: none;
     }
 
      .catalog-second-screen .filter_button .arrow {
@@ -1469,34 +1471,43 @@ p, ul, blockquote {
         top: 0;
         bottom: 0;
         left: 220px;
+        -webkit-transition: all 0.5s linear 0s;
+        -moz-transition: all 0.5s linear 0s;
+        -o-transition: all 0.5s linear 0s;
+        transition: all 0.5s linear 0s;
     }
 
      .catalog-second-screen .filter_button .arrow.active {
-        background: url(../img/sprites.svg) -280px -96px;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 
-    .catalog-second-screen aside {
+     .catalog-second-screen .filters {
         background-color: #efefef;
+        box-sizing: border-box;
+        padding-left: 20px;
         width: 300px;
         float: left;
         letter-spacing: 2px;
     }
 
-    .catalog-second-screen aside .filter {
+    .catalog-second-screen .filters .filter {
         font-size: 22px;
         font-family: "Acrom-Bold";
         text-transform: uppercase;
         text-align: left;
-        padding: 27px 20px 0;
+        padding: 27px 0 0;
     }
 
-    .catalog-second-screen aside .price_filter {
+    .catalog-second-screen .filters .price_filter {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 20px;
     }
 
-    .catalog-second-screen aside .price input {
+    .catalog-second-screen .filters .price input {
         display: block;
         padding: 0 15px;
         margin: 23px 0 28px;
@@ -1509,7 +1520,7 @@ p, ul, blockquote {
         width: 99px;
     }
 
-    .catalog-second-screen aside .price .symbol1 {
+    .catalog-second-screen .filters .price .symbol1 {
        font-size: 18px;
        font-family: "Raleway-Medium";
        padding: 30px 10px;
@@ -1533,12 +1544,12 @@ p, ul, blockquote {
         background-color: rgb(69, 58, 52);
     }
 
-    .catalog-second-screen aside ul {
+    .catalog-second-screen .filters ul {
        margin: 0;
-       padding: 10px 20px;
+       padding: 10px 0;
     }
 
-    .catalog-second-screen aside ul li {
+    .catalog-second-screen .filters ul li {
         font-size: 18px;
         font-family: "Raleway-Medium";
         line-height: 2.222;
@@ -1546,7 +1557,7 @@ p, ul, blockquote {
         text-align: left;
     }
 
-    .catalog-second-screen aside ul li a {
+    .catalog-second-screen .filters ul li a {
         text-decoration: none;
         color: rgb(69, 58, 52);
     }
@@ -1564,8 +1575,10 @@ p, ul, blockquote {
     }
 
     .catalog-second-screen .catalog_card .sculpture_photo {
+        display: block;
         background-color: aqua;
         width: 100%;
+        max-width: 361px;
         height: 441px;
     }
 
@@ -1602,24 +1615,28 @@ p, ul, blockquote {
         padding: 12px 0 5px;
         line-height: 1.625;
         letter-spacing: 1px;
+        max-width: 361px;
     }
 
-    .catalog-second-screen .catalog_cards button {
+    .catalog-second-screen .catalog_cards .button {
         display: block;
         background-color: #ffd57a;
         box-sizing: border-box;
         border: solid 1px rgb(204, 170, 98);
         cursor: pointer;
         height: 59px;
-        width: 80%;
+        width:100%; 
+        max-width: 290px;
         margin: 15px 0;
-        padding: 15px;
+        padding: 20px;
         font-size: 18px;
         font-family: "Acrom-Medium";
         text-transform: uppercase;
         text-align: center;
         outline: none;
         letter-spacing: 1.5px;
+        color: rgb(69, 58, 52);
+        text-decoration: none;
     }
 
     .catalog-pagination {
@@ -1692,6 +1709,85 @@ p, ul, blockquote {
         right: 0;
     }
 
+/* card */
+    .card-second-screen {
+        padding: 50px 0;
+    }
+
+    .card-second-screen .catalog_card {
+        overflow: hidden;
+    }
+
+    .card-second-screen .catalog_card .information {
+        text-align: left;
+        padding: 50px 0;
+    }
+
+    .card-second-screen .catalog_card .sculpture_photo {
+        background-color: aqua;
+        width: 490px;
+        height: 674px;
+        float: left;
+        border: solid 5px rgb(255, 255, 255);
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+        margin-right: 60px;
+    }
+
+    .card-second-screen .catalog_card .sculpture_price {
+        font-size: 36px;
+        font-family: "Acrom-Bold";
+        text-transform: uppercase;
+        padding: 23px 0 16px;
+        letter-spacing: 1.7px;
+    }
+
+    .card-second-screen .sculpture_price .symbol_rur {
+        font-size: 36px;
+        font-family: "Raleway-Bold";
+        padding: 0;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .card-second-screen .sculpture_price .symbol_rur:before {
+        content: "";
+        background-color: rgb(69, 58, 52);
+        position: absolute;
+        height: 4px;
+        width: 11px;
+        top: 27px;
+        left: 1px;
+    }
+
+    .card-second-screen .catalog_card .sculpture_material, .card-second-screen .catalog_card .sculpture_size {
+
+    }
+
+    .card-second-screen .catalog_card .sculpture_description {
+        font-size: 16px;
+        font-family: "Raleway-Medium";
+        padding: 12px 0 5px;
+        line-height: 1.625;
+        letter-spacing: 1px;
+    }
+
+    .card-second-screen .catalog_card button {
+        display: block;
+        background-color: #ffd57a;
+        box-sizing: border-box;
+        border: solid 1px rgb(204, 170, 98);
+        cursor: pointer;
+        height: 59px;
+        width: 30%;
+        margin: 15px 0;
+        padding: 15px;
+        font-size: 18px;
+        font-family: "Acrom-Medium";
+        text-transform: uppercase;
+        text-align: center;
+        outline: none;
+        letter-spacing: 1.5px;
+    }
 
 /* materials */
 /* material_types */
@@ -1917,6 +2013,41 @@ p, ul, blockquote {
 
 
 /* Media */
+    @media(max-width: 1366px) {
+            .catalog-second-screen .catalog_cards .catalog_card {
+            padding: 0 0 78px 40px;
+        }
+    }
+
+    @media(max-width: 1280px) {
+        
+        .catalog-second-screen .filter_button {
+            display: block;    
+        }
+        
+        .catalog-second-screen .filters {
+            display: none;
+            width: 100%;
+            float: none;
+        }
+        
+        .catalog-second-screen .wrapper {
+            padding: 0 15px;
+        }
+        
+        .catalog-second-screen .catalog_cards {
+            padding: 0 50px;
+        }
+        
+        .catalog-second-screen .catalog_cards .catalog_card {
+            padding: 50px 45px 78px;
+        }
+        
+        .catalog-pagination {
+            padding: 26px 0 60px 40px;
+        }
+    }
+
 	@media(max-width: 1300px) {
 		.first-screen-img {
 		    margin-left: -300px;
@@ -2043,38 +2174,19 @@ p, ul, blockquote {
 			width: 75%;
 			float: none;
 		}
-        
+
         .material-types .types .type {
             width: 33.333%;
         }
 	}
 
-    @media(max-width: 1024px) {
-        
-        .catalog-second-screen .filter_button button {
-        display: block;
+        @media(max-width: 1024px) {
+            .catalog-second-screen .catalog_cards {
+            padding: 0 20px;
         }
-        
-        .catalog-second-screen aside {
-            display: none;
-            width: 100%;
-            float: none;
-        }
-        
-        .catalog-second-screen .wrapper {
-            padding: 0 15px;
-        }
-        
-        .catalog-second-screen .catalog_cards {
-            padding: 0 50px;
-        }
-        
-        .catalog-second-screen .catalog_cards .catalog_card {
-            padding: 50px 45px 78px;
-        }
-        
-        .catalog-pagination {
-            padding: 26px 0 60px 40px;
+            
+            .catalog-second-screen .catalog_cards .catalog_card {
+            padding: 50px 20px 78px;
         }
     }
 
@@ -2184,6 +2296,11 @@ p, ul, blockquote {
         
         .bust-nine-screen .carousel .steps_container {
             width: 200%;
+        }
+        
+        .catalog-second-screen .catalog_cards .catalog_card {
+            width: 100%;
+            margin: 0 auto;
         }
     }
 
