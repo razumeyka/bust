@@ -66,7 +66,8 @@ $(document).ready(function(){
 //        $('.step').css('height', a*2+'px'); 
 //    })
     
-    $('.filter_button').click(function(){
+    $('.filter_button').click(function(event){
+            event.preventDefault();
             $('.filters').slideToggle(700);
             $('.arrow').toggleClass('active');
     });
