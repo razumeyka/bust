@@ -2500,6 +2500,10 @@ p, ul, blockquote {
         padding: 40px 0;
         }
         
+        .card-second-screen .catalog_card .sculpture_photo {
+            width: 100%;
+        }
+        
         .card-second-screen .catalog_card .sculpture_photo a, .card-second-screen .catalog_card .sculpture_photo .thumbnails a {
             height: auto;
         }
