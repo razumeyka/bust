@@ -1728,6 +1728,7 @@ p, ul, blockquote {
     }
 
     .card-second-screen .catalog_card .sculpture_photo {
+        display: block;
         background-color: aqua;
         width: 490px;
         height: 674px;
@@ -1737,8 +1738,13 @@ p, ul, blockquote {
         margin-right: 60px;
     }
 
+    .card-second-screen .catalog_card .sculpture_photo .thumbnails a {
+        display: block;
+        background-color: aqua;
+    }
+
     .card-second-screen .catalog_card .sculpture_price {
-        font-size: 36px;
+        font-size: 44px;
         font-family: "Acrom-Bold";
         text-transform: uppercase;
         padding: 23px 0 16px;
@@ -1763,11 +1769,7 @@ p, ul, blockquote {
         left: 1px;
     }
 
-    .card-second-screen .catalog_card .sculpture_material, .card-second-screen .catalog_card .sculpture_size {
-
-    }
-
-    .card-second-screen .catalog_card .sculpture_description {
+    .card-second-screen .catalog_card .about {
         font-size: 16px;
         font-family: "Raleway-Medium";
         padding: 12px 0 5px;
@@ -1775,7 +1777,7 @@ p, ul, blockquote {
         letter-spacing: 1px;
     }
 
-    .card-second-screen .catalog_card button {
+    .card-second-screen .catalog_card .button {
         display: block;
         background-color: #ffd57a;
         box-sizing: border-box;
@@ -1791,6 +1793,8 @@ p, ul, blockquote {
         text-align: center;
         outline: none;
         letter-spacing: 1.5px;
+        color: rgb(69, 58, 52);
+        text-decoration: none;
     }
 
 /* materials */
