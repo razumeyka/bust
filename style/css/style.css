@@ -1801,6 +1801,7 @@ p, ul, blockquote {
         height: 57px;
         max-width: 291px;
         letter-spacing: 0.3px;
+        padding: 18px 0;
     }
 
 /* materials */
@@ -2497,6 +2498,14 @@ p, ul, blockquote {
         
         .catalog-second-screen .catalog_cards .catalog_card {
         padding: 40px 0;
+        }
+        
+        .card-second-screen .catalog_card .sculpture_photo a, .card-second-screen .catalog_card .sculpture_photo .thumbnails a {
+            height: auto;
+        }
+        
+        .card-second-screen .catalog_card .sculpture_photo a img {
+            width: 100%;
         }
 	}
 
